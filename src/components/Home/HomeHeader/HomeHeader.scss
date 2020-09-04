@@ -1,0 +1,49 @@
+@import 'src/styles/lib';
+
+.HomeHeader {
+  position: relative;
+  height: 110vh;
+  width: 100%;
+  overflow: hidden;
+
+  &__content {
+    @include abs(0, 0, 0, 0);
+    margin: 30vh $horizontal-padding;
+    opacity: 0.9;
+    z-index: 1;
+
+    &__text {
+      @include abs(auto, auto, auto, 0);
+      max-width: 800px;
+
+      &__top {
+        padding-left: 1.3em;
+      }
+
+      &__description {
+        margin-top: 30px;
+        font-size: 1.2em;
+        line-height: 1.6em;
+        .Link {
+          font-weight: 600;
+          color: $a1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .HomeHeader {
+    max-height: 30em;
+    &__content {
+      margin: 6em $horizontal-padding-skinny;
+      &__text {
+        max-width: 100vw;
+        &__title {
+          font-size: $font-size-large;
+        }
+      }
+    }
+  }
+}

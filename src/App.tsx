@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react';
+import { Helmet } from 'react-helmet';
+import { Route, Switch, withRouter } from 'react-router-dom';
 
-function App() {
+import './App.scss';
+import Header from './components/Header';
+
+const Home = React.lazy(() => import('./components/Home'));
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Sanjay Magar</title>
+        <link rel='canonical' href='https://wattenberger.com' />
+        <meta property='og:type' content='article' />
+        <meta
+          name='description'
+          content='Learn how to make charts interactive using d3.js'
+        />
+      </Helmet>
+      <Suspense fallback='Loading...'>
+        <Switch>
+          <Route exact path='/' component={Home} />
+        </Switch>
+        <Header />
+      </Suspense>
     </div>
   );
-}
+};
 
-export default App;
+export default withRouter(App);

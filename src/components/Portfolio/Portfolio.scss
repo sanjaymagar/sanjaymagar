@@ -1,0 +1,113 @@
+@import 'src/styles/lib';
+$aspect-ratio: 58vw;
+
+.Portfolio {
+  padding: 2em $horizontal-padding;
+  &__category {
+    margin-top: 160px;
+    &__label {
+      position: relative;
+      &::before {
+        content: '';
+        @include abs(0.5em, auto, auto, -1.6em);
+        width: $horizontal-padding;
+        border-bottom: 1px solid;
+        transform: translate3d(-100%, 0, 0);
+      }
+    }
+  }
+  &__item {
+    margin: 2em 0 10em 0;
+
+    &__description {
+      position: relative;
+      margin-bottom: 1.6em;
+      max-width: 50em;
+      text-align: justify;
+
+      ol {
+        padding-left: 3em;
+
+        li {
+          margin-bottom: 0.6em;
+        }
+      }
+    }
+    &__tools {
+      display: flex;
+      flex-direction: column;
+      @include abs(7px, auto, auto, -1.6em);
+      widows: 210px;
+      height: 200px;
+      text-align: right;
+      transform: translate3d(-100%, 0, 0);
+    }
+    &__images {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0 (-$horizontal-padding);
+    }
+    &__image {
+      flex: 1 1 50%;
+      height: $aspect-ratio/2;
+      width: 50%;
+      overflow: hidden;
+
+      &:nth-child(3) {
+        width: 100%;
+        height: $aspect-ratio;
+      }
+      &__content {
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &__link {
+      display: inline-block;
+      margin: 20px 0;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .Portfolio {
+    padding: 2em $horizontal-padding-skinny;
+    &__category {
+      &__label {
+        &::before {
+          width: $horizontal-padding-skinny;
+        }
+      }
+    }
+    &__item {
+      margin: 2em 0 10em 0;
+
+      &__tools {
+        position: relative;
+        left: 0;
+        height: auto;
+        width: 100%;
+        max-width: 100vw;
+        flex-wrap: wrap;
+        margin-bottom: 21px;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        transform: none;
+      }
+      &__tool {
+        margin-left: 4px;
+      }
+      &__images {
+        margin: 0 (-$horizontal-padding-skinny);
+      }
+      &__image {
+        flex: 1 1 50%;
+        height: $aspect-ratio;
+      }
+    }
+  }
+}

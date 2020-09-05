@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Route, Switch, withRouter } from 'react-router-dom';
 
 import './App.scss';
-import Header from './components/Header';
+import { Header, Footer, Link } from './components';
 
 const Home = React.lazy(() => import('./components/Home'));
 
@@ -23,8 +23,23 @@ const App = () => {
       <Suspense fallback='Loading...'>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route>
+            <div
+              style={{
+                height: '90vh',
+                width: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <h2>Uh oh, there's nothing here</h2>
+              <Link to='/'>Take me Home</Link>
+            </div>
+          </Route>
         </Switch>
         <Header />
+        <Footer />
       </Suspense>
     </div>
   );

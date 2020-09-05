@@ -14,9 +14,7 @@ const HomeHeader = () => {
             I write code, think about data, and create digital experiences.
             <br />
             Currently Software Engineer at{' '}
-            <Link to='' href='https://zakipointhealth.com/' target='_blank'>
-              Zakipoint Health
-            </Link>
+            <Link to='https://zakipointhealth.com/'>Zakipoint Health</Link>
             .
             <br />
             <br />

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from '../_ui';
 import './Header.scss';
+import { Link } from '../_ui';
 
 const Header = () => {
   return (

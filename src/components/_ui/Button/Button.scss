@@ -1,0 +1,47 @@
+@import 'src/styles/lib';
+
+.Button {
+  display: inline-block;
+  padding: 0.6em 0.9em;
+  background: $a1;
+  color: white;
+  font-size: 0.9em;
+  line-height: 1em;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background $transition-fast;
+  appearance: none;
+  border: none;
+
+  &:focus,
+  &:active,
+  &:hover {
+    background: $a2;
+    color: $bgc;
+  }
+  & + .Button {
+    margin-left: 0.3em;
+  }
+
+  &--selected {
+    background: $accent-4;
+    color: $bgc;
+  }
+
+  &--style {
+    &-secondary {
+      background: #838399;
+
+      &:focus,
+      &:active,
+      &:hover {
+        background: $tc;
+      }
+    }
+  }
+
+  &:disabled {
+    background: $grey3;
+  }
+}

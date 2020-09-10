@@ -3,9 +3,14 @@ import { Helmet } from 'react-helmet';
 import { Route, Switch, withRouter } from 'react-router-dom';
 
 import './App.scss';
-import { Header, Footer, Link, Blog } from './components';
+import { Link } from './components';
+import Wave from './components/Blog/posts/D3AndReact/Wave';
+import { D3AndReact } from './components/Blog/posts/D3AndReact';
 
 const Home = React.lazy(() => import('./components/Home'));
+const Header = React.lazy(() => import('./components/Header'));
+const Blog = React.lazy(() => import('./components/Blog'));
+const Footer = React.lazy(() => import('./components/Footer'));
 
 const App = () => {
   return (
@@ -24,6 +29,8 @@ const App = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/blog' component={Blog} />
+          <Route exact path='/blog/wave' component={Wave} />
+          <Route exact path='/blog/react-and-d3' component={D3AndReact} />
           <Route>
             <div
               style={{
@@ -40,7 +47,7 @@ const App = () => {
           </Route>
         </Switch>
         <Header />
-        <Footer />
+        {/* <Footer /> */}
       </Suspense>
     </div>
   );

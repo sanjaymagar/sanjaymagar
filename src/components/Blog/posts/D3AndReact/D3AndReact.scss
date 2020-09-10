@@ -1,0 +1,12 @@
+@import 'src/styles/lib';
+
+.D3AndReact {
+  padding: 6em 2em;
+  max-width: 82em;
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

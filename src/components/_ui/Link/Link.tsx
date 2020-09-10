@@ -2,10 +2,13 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
+import './Link.scss';
+
 interface LinkProps {
   to: string;
   children: any;
   className?: string;
+  type?: string;
 }
 
 const isInternalURL = (to: string) => {
@@ -17,14 +20,26 @@ const isInternalURL = (to: string) => {
   }
 };
 
-const Link = ({ to, children, ...props }: LinkProps) => {
+const Link = ({
+  to,
+  children,
+  type = 'inline',
+  className,
+  ...props
+}: LinkProps) => {
   const isInternalUrl = isInternalURL(to);
+  className = `Link Link--type-${type} ${className ? className : ''}`;
   const link = isInternalUrl ? (
-    <RouterLink to={to} {...props}>
+    <RouterLink to={to} className={className} {...props}>
       {children}
     </RouterLink>
   ) : (
-    <a href={to} target='_blank' rel='noopener noreferrer' {...props}>
+    <a
+      href={to}
+      target='_blank'
+      rel='noopener noreferrer'
+      className={className}
+      {...props}>
       {children}
     </a>
   );

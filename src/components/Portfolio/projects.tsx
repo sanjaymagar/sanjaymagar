@@ -44,11 +44,11 @@ export const projects: Projects[] = [
               module, and how they factor into your goals. Writing this article
               was really rewarding, since I got to delve into parts of the API
               that I had never looked at before. For example, the{' '}
-              <a href='/blog/d3#maps-and-globes'>
+              <Link to='/blog/d3#maps-and-globes'>
                 different geographic projections
-              </a>{' '}
-              and <a href='/blog/d3#drawing-svg-shapes'>polygon methods</a> will
-              definitely come in handy in the future!
+              </Link>{' '}
+              and <Link to='/blog/d3#drawing-svg-shapes'>polygon methods</Link>{' '}
+              will definitely come in handy in the future!
             </p>
           </div>
         ),
@@ -65,7 +65,7 @@ export const projects: Projects[] = [
       {
         title: 'Interactive Charts with D3.js',
         description: (
-          <div>
+          <>
             <p>
               This article is the first in a series, showing how to make your
               web charts interactive. It runs through two ways to add a tooltip
@@ -88,7 +88,7 @@ export const projects: Projects[] = [
               </Link>
               .
             </p>
-          </div>
+          </>
         ),
         tools: ['D3.js', 'React.js', 'SVG'],
         images: [interaction],
@@ -97,7 +97,7 @@ export const projects: Projects[] = [
       {
         title: 'Fullstack D3 and Data Visualization',
         description: (
-          <div>
+          <>
             <p>
               Having spent ten years teaching myself D3.js and designing
               dashboards and data visualizations, I wrote the book that I wish I
@@ -113,7 +113,7 @@ export const projects: Projects[] = [
               </Link>
               .
             </p>
-          </div>
+          </>
         ),
         tools: ['D3.js', 'SVG', 'Words'],
         images: [book],
@@ -123,7 +123,7 @@ export const projects: Projects[] = [
       {
         title: 'Illegal Foreign Fishing',
         description: (
-          <div>
+          <>
             <p>
               A weekend exploration of fishing in foreign waters - most of the
               work was analyzing a 7 million row dataset!
@@ -135,7 +135,7 @@ export const projects: Projects[] = [
               data sources, to monitor commercial fishing activity and larger
               boats.
             </p>
-          </div>
+          </>
         ),
         tools: ['SVG', 'D3.js', 'Python'],
         images: [fishing],
@@ -144,14 +144,14 @@ export const projects: Projects[] = [
       {
         title: 'Dog Names in NYC',
         description: (
-          <div>
+          <>
             <p>
               I found this great dataset of registered dog names in New York
               City and had to dig in. Did you know that Yorkies are the most
               common NYC dog? Or that a dog named Molly is most likely a Lab
               from Staten Island? Explore for more important dog facts!
             </p>
-          </div>
+          </>
         ),
         tools: ['d3.js', 'SVG'],
         images: [dogs],
@@ -161,14 +161,14 @@ export const projects: Projects[] = [
       {
         title: 'Dog Breeds',
         description: (
-          <div>
+          <>
             <p>
               I found another great doggy dataset of breed popularity over time
               from the American Kennel Club. This chart was an experiment to
               test out a new kind of tooltip that scrolls a list - check it out
               and tell me what you think!
             </p>
-          </div>
+          </>
         ),
         tools: ['d3.js', 'SVG'],
         images: [dogBreeds],

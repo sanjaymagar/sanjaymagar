@@ -52,24 +52,23 @@
 ### 📕 Projects live demo
 
 - [DevConnector: Social network for developers](https://luddite.herokuapp.com/)
-- [Redux Toolkit- TODO APP](https://sanjaymagar.github.io/rtk/)
-- [Porfolio](https://sanjaymagar.github.io/luddite/)
-- [Muti Step Form](https://sanjaymagar.github.io/Multi-Step-Form/)
-- [Keyboard Layout Theme](https://sanjaymagar.github.io/keyboard_layout_theme/)
-- [Apple Watch](https://sanjaymagar.github.io/apple_watch/)
-- [SASS: Natours](https://sanjaymagar.github.io/natours-sass/)
-- [Netflix Landing page](https://sanjaymagar.github.io/netflix-nepal-landing-page/)
-- [Instagram Tab Bar](https://sanjaymagar.github.io/learn_ui/)
-- [Cellular Automata](https://sanjaymagar.github.io/cellular-automata/)
-- [Cellular Automata](https://sanjaymagar.github.io/cellular-automata/)
-- [D3JS Chart](https://sanjaymagar.github.io/d3js_chart/)
+- [Redux Toolkit- TODO APP](https://sanjmgr.github.io/rtk/)
+- [Porfolio](https://sanjmgr.github.io/luddite/)
+- [Muti Step Form](https://sanjmgr.github.io/Multi-Step-Form/)
+- [Keyboard Layout Theme](https://sanjmgr.github.io/keyboard_layout_theme/)
+- [Apple Watch](https://sanjmgr.github.io/apple_watch/)
+- [SASS: Natours](https://sanjmgr.github.io/natours-sass/)
+- [Netflix Landing page](https://sanjmgr.github.io/netflix-nepal-landing-page/)
+- [Instagram Tab Bar](https://sanjmgr.github.io/learn_ui/)
+- [Cellular Automata](https://sanjmgr.github.io/cellular-automata/)
+- [D3JS Chart](https://sanjmgr.github.io/d3js_chart/)
 
 ---
 
-<img align="left" alt="sanjaymagar's Github Stats" src="https://github-readme-stats.vercel.app/api?username=sanjaymagar&show_icons=true&hide_border=true" />
+<img align="left" alt="sanjaymagar's Github Stats" src="https://github-readme-stats.vercel.app/api?username=sanjmgr&show_icons=true&hide_border=true" />
 
 [website]: https://zakipointhealth.com/
 [instagram]: https://www.instagram.com/sanjmagr/
-[linkedin]: https://www.linkedin.com/in/sanjay-gharti-magar-979747155/
-[github]: https://github.com/sanjaymagar
-[porfolio]: https://sanjaymagar.github.io/
+[linkedin]: https://www.linkedin.com/in/sanjmgr/
+[github]: https://github.com/sanjmgrl
+[porfolio]: https://sanjmgr.netlify.app/
